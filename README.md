@@ -21,11 +21,11 @@ Git Bash
 Git Hub
 R Studio for data visuals```
 
-**Pre-requisites:**
+Pre-requisites:
 
 Some working knowledge of Python is preferrable. But the annotations in the python scripts should assist in understanding what the code is doing.
 
-**File Structure**
+```File Structure
 1.GitHub
   ¬Main
     ¬class_file.py
@@ -39,6 +39,6 @@ Some working knowledge of Python is preferrable. But the annotations in the pyth
     ¬testing_module.py
   ¬Data
     ¬library_customers.csv
-    ¬library.csv
+    ¬library.csv```
   
 
