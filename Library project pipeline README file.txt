@@ -1,12 +1,32 @@
 Library project pipeline README file.
 
-The pipeline for this project is triggered whenever new data files are received.
+This is the README file for the library project pipeline.
 
-It takes the source data using Fabric pipelines and loads it into the staging area.
+Who and What is this for?
 
-The next step in the pipeline validates and cleans up the data. The validation checks include searching for NULL values, duplicate checking,
-date formats, checking date types are in the expected format.
+This is for data-minded people who would like to execute the workflow to trigger the pipeline for this project.
+The pipeline takes the raw data for the library and library customers csv files, cleans and reformats them for data visualisation consumption.
 
-Once the clean-up steps have been run, the final validation steps and row counts are carried out.
+Tech stack involved in the project:
 
-Data is then loaded into the aggregated and summary tables for visual analytics and Power BI reporting.
+csv files
+
+Python 3.14
+-pandas
+-pytest
+
+Visual Studio Code
+Command Line/Terminal
+Git Bash
+Git Hub
+R Studio for data visuals
+
+Pre-requisites:
+
+Some working knowledge of Python is preferrable. But the annotations in the python scripts should assist in understanding what the code is doing.
+
+
+
+
+
+
