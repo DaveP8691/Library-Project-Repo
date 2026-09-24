@@ -1,4 +1,4 @@
-Library project pipeline README file.
+**Library project pipeline README file.**
 
 This is the README file for the library project pipeline.
 
@@ -9,17 +9,17 @@ The pipeline takes the raw data for the library and library customers csv files,
 
 Tech stack involved in the project:
 
-csv files
+'''csv files
 
-Python 3.14
--pandas
--pytest
+'''Python 3.14
+'''-pandas
+'''-pytest
 
-Visual Studio Code
-Command Line/Terminal
-Git Bash
-Git Hub
-R Studio for data visuals
+'''Visual Studio Code
+'''Command Line/Terminal
+'''Git Bash
+'''Git Hub
+'''R Studio for data visuals
 
 Pre-requisites:
 
