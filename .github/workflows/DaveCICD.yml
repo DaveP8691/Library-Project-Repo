@@ -35,12 +35,12 @@ env:
 
 jobs:
 
-  test:
+ test:
     name: Run Python Tests
     runs-on: ubuntu-latest
     
 # This workflow contains a single job called "build"
-  build:
+ build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     steps:
@@ -76,7 +76,7 @@ jobs:
 # Only runs if the test job succeeds
 # ==================================================
 
- build:
+build:
     name: Building Docker Image
     needs: test
     runs-on: ubuntu-latest
