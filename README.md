@@ -25,3 +25,20 @@ R Studio for data visuals```
 
 Some working knowledge of Python is preferrable. But the annotations in the python scripts should assist in understanding what the code is doing.
 
+**File Structure**
+1.GitHub
+  ¬Main
+    ¬class_file.py
+    ¬cleaning_module.py
+    ¬main.py
+  ¬Pipeline
+    ¬requirements.txt
+  ¬Testing
+    ¬test_calc_py_test.py
+    ¬test_calc_unit_test.py
+    ¬testing_module.py
+  ¬Data
+    ¬library_customers.csv
+    ¬library.csv
+  
+
