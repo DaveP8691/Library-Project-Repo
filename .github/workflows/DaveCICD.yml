@@ -76,7 +76,9 @@ jobs:
 # Only runs if the test job succeeds
 # ==================================================
 
-build:
+
+
+ build:
     name: Building Docker Image
     needs: test
     runs-on: ubuntu-latest
