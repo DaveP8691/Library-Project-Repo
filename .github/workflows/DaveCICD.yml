@@ -29,16 +29,16 @@ concurrency:
 env:
   IMAGE_NAME: library-quality-analysis
 
- # ==================================================
-  # TEST JOB
-  # ==================================================
+# ==================================================
+# TEST JOB
+# ==================================================
 
 test:
     name: Run Python Tests
     runs-on: ubuntu-latest
 
 jobs:
-  # This workflow contains a single job called "build"
+# This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -70,10 +70,10 @@ jobs:
           --ignore-glob="*_unit_test.py" \
           -v
 
- # ==================================================
-  # BUILD JOB
-  # Only runs if the test job succeeds
-  # ==================================================
+# ==================================================
+# BUILD JOB
+# Only runs if the test job succeeds
+# ==================================================
 
    build:
     name: Building Docker Image
@@ -84,8 +84,7 @@ jobs:
 
       - name: Checkout Repo
         uses: actions/checkout@v4
-
-      # Build Docker image
+# Build Docker image
       - name: Create Image
         run: |
           docker build \
@@ -93,20 +92,20 @@ jobs:
             --tag $IMAGE_NAME:${{ github.sha }} \
             .
 
-      # Run Docker image
+# Run Docker image
       - name: Run Docker Image
         run: |
           docker run --rm \
             $IMAGE_NAME:${{ github.sha }}
 
-      # Save Docker image as a .tar file
+# Save Docker image as a .tar file
       - name: Save Docker Image
         run: |
           docker save \
             $IMAGE_NAME:${{ github.sha }} \
             --output $IMAGE_NAME.tar
 
-      # Upload Docker image as a GitHub Actions artifact
+# Upload Docker image as a GitHub Actions artifact
       - name: Upload Docker Image Artifact
         uses: actions/upload-artifact@v7
         with:
